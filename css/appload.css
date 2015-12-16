@@ -1,4 +1,9 @@
-
+.cl {
+  float: left;
+}
+.cr {
+  float: right;
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,20 +27,42 @@ html {
 img {
   -webkit-touch-callout: none;
 }
-
 html,
 body {
   width: 100%;
   height: 100%;
+  
 }
 .loadW {
   max-width: 650px;
-  background: url("../images/bjzi.png") no-repeat top center #fff87c;
-  background-size: 100% auto;
   height: 100%;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
+  background-color:#fff87c;
+}
+.loadW .loadBj {
+  height: 86%;
+  width: 100%;
+  margin: 0 auto;
+}
+.loadW .loadBj img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-height: 100%;
+  width: 100%;
+}
+.loadW .btnAPP {
+  height: 14%;
+  
+}
+.loadW .btnAPP img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 11.5rem;
+  width: 11.5rem;
 }
 .loadW .wxTipBj {
   height: 100%;
@@ -52,16 +79,9 @@ body {
   left: 3%;
   z-index: 999;
 }
-.loadW .btnAPP {
-  left: 25%;
-  max-width: 11rem;
-  position: absolute;
-  background: url("../images/bjzi.png") no-repeat top center #fff87c;
-  background-size: 100% auto;
-}
 .loadW .btnPc {
   position: absolute;
-  bottom: 0.2rem;
+  top: 7.9rem;
   left: 50%;
   margin-left: -249px;
 }
@@ -72,122 +92,45 @@ body {
 }
 .loadW .btnPc .and {
   background: url("../images/andriod.gif") no-repeat center center;
-  background-size: 100% auto;
+  background-size: 92% auto;
 }
 .loadW .btnPc .ios {
   background: url("../images/appstor.gif") no-repeat center center;
-  background-size: 100% auto;
-}
-
-@media screen and (max-width: 320px) {
-  html {
-    font-size: 16.7px;
-  }
-   .loadW .btnPc {
-	   display:none;
-   }
-  .loadW {
-    background: url("../images/bjzi.png") no-repeat top center #fff87c;
-    background-size: 95% auto;
-  }
-  .loadW .btnAPP {
-    top: 25rem;
-    left: 23.4% !important;
-    max-width: 12rem;
-    background: url("../images/bjzi.png") no-repeat top center #fff87c;
-    background-size: 100% auto;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 360px) {
-  html {
-    font-size: 17px;
-  }
-   .loadW .btnPc {
-	   display:none;
-   }
-   .loadW {
-    background: url("../images/bjzi.png") no-repeat top center #fff87c;
-    background-size: 100% auto;
-  }
-   .loadW .btnAPP {
-    top: 35rem;
-    left: 23.4% !important;
-    max-width: 12rem;
-    background: url("../images/bjzi.png") no-repeat top center #fff87c;
-    background-size: 100% auto;
-  }
-  
-}
-@media screen and (min-width: 361px) and (max-width: 375px) {
-  html {
-    font-size: 20px;
-  }
-   .loadW .btnPc {
-	   display:none;
-   }
-   .loadW .btnAPP {
-    top: 27rem;
-   }
-}
-@media screen and (min-width: 376px) and (max-width: 414px) {
-  html {
-    font-size: 21.5px;
-  }
-   .loadW .btnPc {
-	   display:none;
-   }
-    .loadW .btnAPP {
-    top: 29rem;
-   }
+  background-size: 92% auto;
 }
 @media screen and (min-width: 640px) and (max-width: 719px) {
   html {
     font-size: 20px;
   }
-   .loadW .btnPc {
-	   display:none;
-   }
 }
 @media screen and (min-width: 720px) and (max-width: 749px) {
   html {
     font-size: 22.5px;
   }
 }
-@media screen and (min-width: 750px) and (max-width: 13000px) {
+@media screen and (min-width: 750px) {
   html {
-    font-size: 23.5px;
+    font-size: 96px!important;
   }
   .loadW {
     width: 542px;
     background: url("../images/bjzi.png") no-repeat top center #fff87c;
     background-size: 100% auto;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
   }
   .loadW .btnAPP {
     bottom: 1.8rem;
     left: 25%;
     max-width: 11rem;
     position: absolute;
-    display: none;
+	display:none;
+    
   }
   .loadW .btnPc {
-    position: absolute;
-    top: 32.2rem;
-    left: 50%;
-    margin-left: -249px;
-	display:none;
-	
-  }
-  .loadW .btnPc a {
-    display: block;
-    height: 100px;
-    width: 516px;
-  }
-  .loadW .btnPc .and {
-    background: url("../images/andriod.gif") no-repeat center center;
-    background-size: 100% auto;
-  }
-  .loadW .btnPc .ios {
-    background: url("../images/appstor.gif") no-repeat center center;
-    background-size: 100% auto;
-  }
+	  display:block;
+}
+
 }
